@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+		<resource name="jdbc/electrical_networks"
+        auth="Container" 
+        description="DB Electrical Networks" 
+        username="root" 
+        password="pass"
+        driverClassName="com.mysql.jdbc.Driver" 
+        url="jdbc:mysql://localhost:3306/databasename?useUnicode=yes&amp;characterEncoding=UTF-8" 
+        maxActive="10" 
+        maxIdle="3" 
+        maxWait="100"
+        factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" 
+        type="javax.sql.DataSource">
+        </resource>
+        
+        <!-- тут не обзательно имя базы данных, сделаем jdbc/TestDB
+	<Resource name="jdbc/my_database" 
+		auth="Container"
+		type="javax.sql.DataSource"
+		testWhileIdle="true"
+		testOnBorrow="true"
+		testOnReturn="false"
+		validationQuery="SELECT 1"
+		validationInterval="30000"
+		timeBetweenEvictionRunsMillis="30000"
+		maxActive="100"
+		minIdle="10"
+		maxWait="10000"
+		initialSize="10"
+		removeAbandonedTimeout="60"
+		removeAbandoned="true"
+		logAbandoned="true"
+		minEvictableIdleTimeMillis="30000"
+		jmxEnabled="true"
+		username="root"
+		password="MyNewPass"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/my_database"/> -->
+
+</Context>
