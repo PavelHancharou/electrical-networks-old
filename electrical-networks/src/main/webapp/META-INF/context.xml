@@ -1,42 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Context>
-		<resource name="jdbc/electrical_networks"
-        auth="Container" 
-        description="DB Electrical Networks" 
-        username="root" 
-        password="pass"
-        driverClassName="com.mysql.jdbc.Driver" 
-        url="jdbc:mysql://localhost:3306/databasename?useUnicode=yes&amp;characterEncoding=UTF-8" 
-        maxActive="10" 
-        maxIdle="3" 
-        maxWait="100"
-        factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" 
-        type="javax.sql.DataSource">
-        </resource>
-        
-        <!-- тут не обзательно имя базы данных, сделаем jdbc/TestDB
-	<Resource name="jdbc/my_database" 
-		auth="Container"
-		type="javax.sql.DataSource"
-		testWhileIdle="true"
-		testOnBorrow="true"
-		testOnReturn="false"
-		validationQuery="SELECT 1"
-		validationInterval="30000"
-		timeBetweenEvictionRunsMillis="30000"
-		maxActive="100"
-		minIdle="10"
-		maxWait="10000"
-		initialSize="10"
-		removeAbandonedTimeout="60"
-		removeAbandoned="true"
-		logAbandoned="true"
-		minEvictableIdleTimeMillis="30000"
-		jmxEnabled="true"
-		username="root"
-		password="MyNewPass"
-		driverClassName="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost:3306/my_database"/> -->
 
+    <!-- maxActive: Maximum number of dB connections in pool. Make sure you
+         configure your mysqld max_connections large enough to handle
+         all of your db connections. Set to -1 for no limit.
+         -->
+
+    <!-- maxIdle: Maximum number of idle dB connections to retain in pool.
+         Set to -1 for no limit.  See also the DBCP documentation on this
+         and the minEvictableIdleTimeMillis configuration parameter.
+         -->
+
+    <!-- maxWait: Maximum time to wait for a dB connection to become available
+         in ms, in this example 10 seconds. An Exception is thrown if
+         this timeout is exceeded.  Set to -1 to wait indefinitely.
+         -->
+
+    <!-- username and password: MySQL dB username and password for dB connections  -->
+
+    <!-- driverClassName: Class name for the old mm.mysql JDBC driver is
+         org.gjt.mm.mysql.Driver - we recommend using Connector/J though.
+         Class name for the official MySQL Connector/J driver is com.mysql.jdbc.Driver.
+         -->
+    
+    <!-- url: The JDBC connection url for connecting to your MySQL dB.
+         -->
+
+  <!-- <Resource name="jdbc/personnel_department_db_resource" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="10000"
+               username="root" password="root" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/personnel_department_db"/> -->
+               
+	<!--
+	<Context path="/electrical-networks" docBase="electrical-networks" reloadable="true"> 
+	<ResourceLink name="jdbc/electrical-networks" global="jdbc/electrical-networks" type="javax.sql.DataSource"/> -->
+
+	<Resource name="jdbc/electrical_networks" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="10000"
+               username="root" password="pass" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/electrical_networks"/>
 </Context>
