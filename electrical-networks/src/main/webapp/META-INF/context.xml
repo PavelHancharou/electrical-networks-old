@@ -3,6 +3,6 @@
 <Context>
 	<Resource name="jdbc/electrical_networks" auth="Container" type="javax.sql.DataSource"
                maxActive="100" maxIdle="30" maxWait="10000"
-               username="root" password="pass" driverClassName="com.mysql.jdbc.Driver"
+               username="server" password="server" driverClassName="com.mysql.jdbc.Driver"
                url="jdbc:mysql://localhost:3306/electrical_networks"/>
 </Context>

@@ -1,8 +1,9 @@
 package by.hancharou.start;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,16 +15,18 @@ public class MyServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		
-		String surname = request.getParameter("surname");
-		String name = request.getParameter("name");		
-		System.out.println("Вы ввели - " + surname + name);
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
+		
 		Main main = new Main();
-        try {
-			main.sqlTest();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+		boolean isExist = main.accauntIsExist(email, password);
+		if(isExist) {
+			response.sendRedirect("/electrical-networks/second-page.html");
+//			ServletContext context= getServletContext();
+//			RequestDispatcher rd= context.getRequestDispatcher("/second-page.html");
+//			rd.forward(request, response);
+		}else {
+			response.sendRedirect("/electrical-networks/index.html");
 		}
 	}
 }
