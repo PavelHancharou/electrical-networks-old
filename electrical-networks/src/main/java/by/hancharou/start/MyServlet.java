@@ -21,7 +21,7 @@ public class MyServlet extends HttpServlet {
 		Main main = new Main();
 		boolean isExist = main.accauntIsExist(email, password);
 		if(isExist) {
-			response.sendRedirect("/electrical-networks/second-page.html");
+			response.sendRedirect("/electrical-networks/WEB-INF/second-page.html");
 //			ServletContext context= getServletContext();
 //			RequestDispatcher rd= context.getRequestDispatcher("/second-page.html");
 //			rd.forward(request, response);

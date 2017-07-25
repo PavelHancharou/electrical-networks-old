@@ -1,0 +1,167 @@
+body {
+	margin: 0;
+	padding:0;
+    font: 13pt Arial, Helvetica, sans-serif;
+	border: 1px solid #000;
+}
+
+#page_header {
+    text-align: center;
+    background: #3CF;
+    color: #000;
+	border: 1px solid black;
+}
+
+#page_header > img{
+	float: left;
+}
+
+#name {
+	font-size: 40px;
+}
+
+#litle {
+	font-size: large;
+	font-family: cursive; 
+	font-style: italic;
+	text-align: left;
+}
+
+#page_header > nav {
+	border: 1px solid black;
+}
+
+#page_header > nav > ul > li {
+	margin: 0 20px 0 0;
+	padding: 0;
+	display: inline;
+}
+
+#page_header > nav > ul {
+	list-style: nons;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar {
+	float: left;
+	text-align: center;
+	font-family: fantasy;
+	width: 20%;
+	height: 1000px;
+}
+
+#home_left_section {
+	float:left;
+	width: 80%;
+	text-align: center;
+}
+
+#photo_central_section {
+	text-align: center;
+	width: 40%;
+	float: left;
+	width: 40%;
+	height: 1000px;
+}
+
+#info_left_section {
+	float:left;
+	width: 40%;
+	text-align: center;
+	height: 1000px;
+}
+
+#auto_registr {
+	border: 1px solid black;
+	height: 200px;
+	font-size: large;
+	text-align: left;
+	margin: 50px;
+	padding: 50px;
+	line-height: 2;
+}
+
+#central_section {
+	width: 80%;
+	float: left;
+	height: 1000px;
+}
+
+#central_section h2{
+	text-align: center;	
+}
+
+#registr {
+	padding: 5px;
+	height: 150px;
+	line-height: 2;
+}
+
+.table_row {
+	display: table;
+}
+
+div.table_row {
+	display: table-row;
+}
+
+div.table_row p {
+	display: table-cell;
+	padding: 3px;
+}
+
+p.right {
+	text-align: right;
+}
+
+.title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: small;
+	color: blue;
+	text-align: left;
+}
+
+.form_style {
+	font-size: small;
+}
+
+.double {	
+	padding: 5px;
+	width: 45%;
+	float: left;
+}
+
+#information > p{
+	background: #EEE8AA;
+}
+
+#blue{
+	color: blue;
+}
+
+#conditions {
+	width: 100%;
+	float: left;
+	width: 600px;
+}
+
+#button {
+	height: 30px;
+	margin: 50px;
+	float: left;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	clear: both;
+	display: block;
+	text-align: center;
+	background: #3CF;
+    color: #000;
+	border: 1px solid #000;
+	font-size: small;
+}
