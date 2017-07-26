@@ -11,31 +11,10 @@
 		</style>
 	</head>
  
-	<body>
-		<header id="page_header">
-
-			<img src="photos/logotype.jpg" alt="Логотип МЭС">
-			<p id="name">Минские Электрические Сети</p>
-			<p id="litle">Мы несем в ваш дом свет</p>
-			<nav>
-				<ul>
-					<li><a href="homepage.html">Домашняя страница</a></li>
-					<li><a href="authorization.html">Авторизация</a></li>
-				</ul>
-			</nav>
-		</header>
+	<body>		
+		<jsp:include page="pages/header.jsp"/>
  
-		<section id="sidebar">
-			<header>
-				<h2>НАВИГАЦИЯ</h2>
-			</header>
-			<nav>
-				<ul>
-					<li><a href="homepage.html">Домашняя страница</a></li>
-					<li><a href="authorization.html">Авторизация</a></li>
-				</ul>
-			</nav>
-		</section>
+ 		<jsp:include page="pages/nav.jsp"/>
 		
 		<section id="home_left_section">
 			<figure>
@@ -44,9 +23,6 @@
 			</figure>
 		</section>
 		
-		<footer>
-			<p>Email: pavelh88@gmail.com</p>
-			<p>Copyright: &copy; 2017, Hancharou Pavel</p>
-		</footer>
+		<jsp:include page="pages/footer.jsp"/>
 	</body>
 </html>
