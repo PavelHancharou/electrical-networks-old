@@ -12,9 +12,9 @@
 	</head>
  
 	<body>		
-		<jsp:include page="header.jsp"/>
+		<jsp:include page="include/header.jsp"/>
  
- 		<jsp:include page="nav.jsp"/>
+ 		<jsp:include page="include/nav.jsp"/>
 		
 		<section id="photo_central_section">
 			<header>
@@ -35,6 +35,6 @@
 			</article>
 		</section>
 		
-		<jsp:include page="footer.jsp"/>
+		<jsp:include page="include/footer.jsp"/>
 	</body>
 </html>

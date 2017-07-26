@@ -40,30 +40,39 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>TablesPage</servlet-name>
+		<jsp-file>/pages/tables.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TablesPage</servlet-name>
+		<url-pattern>/tables.jsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>IncludeHeader</servlet-name>
-		<jsp-file>/pages/header.jsp</jsp-file>
+		<jsp-file>/pages/include/header.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>IncludeHeader</servlet-name>
-		<url-pattern>/header.jsp</url-pattern>
+		<url-pattern>/include/header.jsp</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
 		<servlet-name>IncludeNav</servlet-name>
-		<jsp-file>/pages/nav.jsp</jsp-file>
+		<jsp-file>/pages/include/nav.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>IncludeNav</servlet-name>
-		<url-pattern>/nav.jsp</url-pattern>
+		<url-pattern>/include/nav.jsp</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
 		<servlet-name>IncludeFooter</servlet-name>
-		<jsp-file>/pages/footer.jsp</jsp-file>
+		<jsp-file>/pages/include/footer.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>IncludeFooter</servlet-name>
-		<url-pattern>/footer.jsp</url-pattern>
+		<url-pattern>/include/footer.jsp</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>

@@ -17,10 +17,14 @@
  		<jsp:include page="include/nav.jsp"/>
 		
 		<section id="home_left_section">
-			<figure>
-				<img src="photos/line.jpg" alt="Логотип МЭС" alt="ВЛ-110кВ" width=100%>
-				<figcaption>Линии электропередач</figcaption>
-			</figure>
+			<table border="1">
+				<caption>Перечень существующих таблиц</caption>
+				 <tr>
+				 	<th>Название таблицы</th>
+				 	<th>Перейти</th>
+				 </tr>
+				 
+			</table>
 		</section>
 		
 		<jsp:include page="include/footer.jsp"/>

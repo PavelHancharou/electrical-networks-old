@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
-encoding//src/main/webapp/pages/footer.jsp=UTF-8
-encoding//src/main/webapp/pages/header.jsp=UTF-8
-encoding//src/main/webapp/pages/nav.jsp=UTF-8
+encoding//src/main/webapp/pages/include/footer.jsp=UTF-8
+encoding//src/main/webapp/pages/include/header.jsp=UTF-8
+encoding//src/main/webapp/pages/include/nav.jsp=UTF-8
