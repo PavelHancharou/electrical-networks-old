@@ -12,9 +12,9 @@
 	</head>
  
 	<body>		
-		<jsp:include page="pages/header.jsp"/>
+		<jsp:include page="header.jsp"/>
  
- 		<jsp:include page="pages/nav.jsp"/>
+ 		<jsp:include page="nav.jsp"/>
 		
 		<section id="home_left_section">
 			<figure>
@@ -23,6 +23,6 @@
 			</figure>
 		</section>
 		
-		<jsp:include page="pages/footer.jsp"/>
+		<jsp:include page="footer.jsp"/>
 	</body>
 </html>

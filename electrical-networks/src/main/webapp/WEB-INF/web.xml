@@ -22,6 +22,51 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>AuthorizationPage</servlet-name>
+		<jsp-file>/pages/authorization.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AuthorizationPage</servlet-name>
+		<url-pattern>/authorization.jsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>HomePage</servlet-name>
+		<jsp-file>/pages/homepage.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HomePage</servlet-name>
+		<url-pattern>/homepage.jsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IncludeHeader</servlet-name>
+		<jsp-file>/pages/header.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IncludeHeader</servlet-name>
+		<url-pattern>/header.jsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IncludeNav</servlet-name>
+		<jsp-file>/pages/nav.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IncludeNav</servlet-name>
+		<url-pattern>/nav.jsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IncludeFooter</servlet-name>
+		<jsp-file>/pages/footer.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IncludeFooter</servlet-name>
+		<url-pattern>/footer.jsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>my-servlet</servlet-name>
 		<servlet-class>by.hancharou.start.MyServlet</servlet-class>
 	</servlet>

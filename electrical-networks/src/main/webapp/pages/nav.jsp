@@ -6,8 +6,8 @@
 	</header>
 	<nav>
 		<ul>
-			<li><a href="homepage.html">Домашняя страница</a></li>
-			<li><a href="authorization.html">Авторизация</a></li>
+			<li><a href="homepage.jsp">Домашняя страница</a></li>
+			<li><a href="authorization.jsp">Авторизация</a></li>
 		</ul>
 	</nav>
 </section>
